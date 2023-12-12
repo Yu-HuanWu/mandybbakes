@@ -33,7 +33,7 @@
 
 // Palette.
 	$palette: (
-		bg:					#ffffff,
+		bg:					#c63634,
 		bg-alt:				#f5f6f7,
 		fg:					#7f888f,
 		fg-bold:			#3d4449,
@@ -42,3 +42,16 @@
 		border-bg:			transparentize(#e6ebed, 0.75),
 		accent:				#f56a6a
 	);
+
+// Define Sass variables
+	$polka-bg-image: radial-gradient(rgb(238, 211, 210) 26%, transparent 26%), radial-gradient(rgb(238, 211, 210) 26%, transparent 26%);
+	$polka-bg-position: 0px 0px, 32px 32px;
+	$polka-bg-size: 64px 64px;
+	$polka-bg-color: rgb(157, 187, 158);
+	
+	.overlay {
+		background: rgba(0, 0, 0, 0.1);
+		color: #ffffff;
+		padding: 2em 0;
+		text-align: center;
+	}

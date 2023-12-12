@@ -1,3 +1,4 @@
+@import "polka";
 ///
 /// Editorial by HTML5 UP
 /// html5up.net | @ajlkn
@@ -34,7 +35,13 @@
 		}
 
 	body {
-		background: _palette(bg);
+		background: _polka(polka-bg-color);
+			.polka {
+				background-image: _polka(polka-bg-image);
+				background-position: _polka(polka-bg-position);
+				background-size: _polka(polka-bg-size);
+				background-color: _polka(polka-bg-color);
+			}
 
 		// Stops initial animations until page loads or stops resizing.
 			&.is-preload,
