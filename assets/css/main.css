@@ -1,24 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
-/* TODO: get this to work in SASS */
-/* .polka {
-  background-image: radial-gradient(rgb(238, 211, 210) 26%, transparent 26%),
-    radial-gradient(rgb(238, 211, 210) 26%, transparent 26%);
-  background-position: 0px 0px,
-    32px 32px;
-  background-size: 64px 64px;
-  background-color: rgb(157, 187, 158);
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  padding: 2em 0;
-  text-align: center;
-} */
-
-
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
