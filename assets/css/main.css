@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
 /* TODO: get this to work in SASS */
-.polka {
+/* .polka {
   background-image: radial-gradient(rgb(238, 211, 210) 26%, transparent 26%),
     radial-gradient(rgb(238, 211, 210) 26%, transparent 26%);
   background-position: 0px 0px,
@@ -16,7 +16,7 @@
   color: #ffffff;
   padding: 2em 0;
   text-align: center;
-}
+} */
 
 
 /*
