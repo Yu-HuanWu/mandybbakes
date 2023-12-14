@@ -33,13 +33,13 @@
 
 // Palette.
 	$palette: (
-		bg:					#c63634,
-		bg-alt:				#f5f6f7,
-		fg:					#7f888f,
+		bg:					#FBF8F9, // snow
+		bg-alt:				#F7D2D3, // tea rose (red)
+		fg:					#4A6051, // feldgrau
 		fg-bold:			#3d4449,
 		fg-light:			#9fa3a6,
-		border:				rgba(210,215,217,0.75),
-		border-bg:			transparentize(#e6ebed, 0.75),
+		border:				#D1C7BE, // timberwolf
+		border-bg:			transparentize(#F7D2D3, 0.75),
 		accent:				#f56a6a
 	);
 

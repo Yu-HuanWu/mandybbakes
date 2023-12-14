@@ -95,7 +95,7 @@ html {
 }
 
 body {
-  background: #c63634;
+  background: #FBF8F9;
 }
 body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
   animation: none !important;
@@ -104,7 +104,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-re
 
 /* Type */
 body, input, select, textarea {
-  color: #7f888f;
+  color: #4A6051;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -224,16 +224,16 @@ sup {
 }
 
 blockquote {
-  border-left: solid 3px rgba(210, 215, 217, 0.75);
+  border-left: solid 3px #D1C7BE;
   font-style: italic;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 2em;
 }
 
 code {
-  background: rgba(230, 235, 237, 0.25);
+  background: rgba(247, 210, 211, 0.25);
   border-radius: 0.375em;
-  border: solid 1px rgba(210, 215, 217, 0.75);
+  border: solid 1px #D1C7BE;
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0.25em;
@@ -255,7 +255,7 @@ pre code {
 
 hr {
   border: 0;
-  border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+  border-bottom: solid 1px #D1C7BE;
   margin: 2em 0;
 }
 hr.major {
@@ -1431,10 +1431,10 @@ textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background: #c63634;
+  background: #FBF8F9;
   border-radius: 0.375em;
   border: none;
-  border: solid 1px rgba(210, 215, 217, 0.75);
+  border: solid 1px #D1C7BE;
   color: inherit;
   display: block;
   outline: 0;
@@ -1465,7 +1465,7 @@ textarea:focus {
 }
 
 select {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(210, 215, 217, 0.75)' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23D1C7BE' /%3E%3C/svg%3E");
   background-size: 1.25em;
   background-repeat: no-repeat;
   background-position: calc(100% - 1em) center;
@@ -1475,7 +1475,7 @@ select {
 }
 select option {
   color: #3d4449;
-  background: #c63634;
+  background: #FBF8F9;
 }
 select:focus::-ms-value {
   background-color: transparent;
@@ -1513,7 +1513,7 @@ input[type=radio] {
 input[type=checkbox] + label,
 input[type=radio] + label {
   text-decoration: none;
-  color: #7f888f;
+  color: #4A6051;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -1537,9 +1537,9 @@ input[type=radio] + label:before {
 }
 input[type=checkbox] + label:before,
 input[type=radio] + label:before {
-  background: #c63634;
+  background: #FBF8F9;
   border-radius: 0.375em;
-  border: solid 1px rgba(210, 215, 217, 0.75);
+  border: solid 1px #D1C7BE;
   content: "";
   display: inline-block;
   font-size: 0.8em;
@@ -1555,7 +1555,7 @@ input[type=checkbox]:checked + label:before,
 input[type=radio]:checked + label:before {
   background: #3d4449;
   border-color: #3d4449;
-  color: #c63634;
+  color: #FBF8F9;
   content: "\f00c";
 }
 input[type=checkbox]:focus + label:before,
@@ -1595,7 +1595,7 @@ input[type=radio] + label:before {
 /* Box */
 .box {
   border-radius: 0.375em;
-  border: solid 1px rgba(210, 215, 217, 0.75);
+  border: solid 1px #D1C7BE;
   margin-bottom: 2em;
   padding: 1.5em;
 }
@@ -1718,7 +1718,7 @@ ul.alt {
   padding-left: 0;
 }
 ul.alt li {
-  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  border-top: solid 1px #D1C7BE;
   padding: 0.5em 0;
 }
 ul.alt li:first-child {
@@ -1818,7 +1818,7 @@ ul.contact {
 }
 ul.contact li {
   text-decoration: none;
-  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  border-top: solid 1px #D1C7BE;
   margin: 1.5em 0 0 0;
   padding: 1.5em 0 0 3em;
   position: relative;
@@ -1886,7 +1886,7 @@ ul.pagination li > .page {
 }
 ul.pagination li > .page.active {
   background-color: #f56a6a;
-  color: #c63634 !important;
+  color: #FBF8F9 !important;
 }
 ul.pagination li > .page.active:hover {
   background-color: #f67878;
@@ -1920,12 +1920,12 @@ table {
   width: 100%;
 }
 table tbody tr {
-  border: solid 1px rgba(210, 215, 217, 0.75);
+  border: solid 1px #D1C7BE;
   border-left: 0;
   border-right: 0;
 }
 table tbody tr:nth-child(2n+1) {
-  background-color: rgba(230, 235, 237, 0.25);
+  background-color: rgba(247, 210, 211, 0.25);
 }
 table td {
   padding: 0.75em 0.75em;
@@ -1938,16 +1938,16 @@ table th {
   text-align: left;
 }
 table thead {
-  border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+  border-bottom: solid 2px #D1C7BE;
 }
 table tfoot {
-  border-top: solid 2px rgba(210, 215, 217, 0.75);
+  border-top: solid 2px #D1C7BE;
 }
 table.alt {
   border-collapse: separate;
 }
 table.alt tbody tr td {
-  border: solid 1px rgba(210, 215, 217, 0.75);
+  border: solid 1px #D1C7BE;
   border-left-width: 0;
   border-top-width: 0;
 }
@@ -2044,7 +2044,7 @@ button.primary,
 .button.primary {
   background-color: #f56a6a;
   box-shadow: none;
-  color: #c63634 !important;
+  color: #FBF8F9 !important;
 }
 input[type=submit].primary:hover,
 input[type=reset].primary:hover,
@@ -2075,7 +2075,7 @@ button:disabled,
 
 /* Mini Posts */
 .mini-posts article {
-  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  border-top: solid 1px #D1C7BE;
   margin-top: 2em;
   padding-top: 2em;
 }
@@ -2144,7 +2144,7 @@ button:disabled,
 .features article .icon:after {
   transform: rotate(45deg);
   border-radius: 0.25rem;
-  border: solid 2px rgba(210, 215, 217, 0.75);
+  border: solid 2px #D1C7BE;
   content: "";
   display: block;
   height: 7em;
@@ -2249,7 +2249,7 @@ button:disabled,
   width: calc(33.3333333333% - 6em);
 }
 .posts article:before {
-  background: rgba(210, 215, 217, 0.75);
+  background: #D1C7BE;
   content: "";
   display: block;
   height: calc(100% + 6em);
@@ -2259,7 +2259,7 @@ button:disabled,
   width: 1px;
 }
 .posts article:after {
-  background: rgba(210, 215, 217, 0.75);
+  background: #D1C7BE;
   bottom: -3em;
   content: "";
   display: block;
@@ -2391,7 +2391,7 @@ button:disabled,
 }
 #main > .inner > section {
   padding: 6em 0 4em 0;
-  border-top: solid 2px rgba(210, 215, 217, 0.75);
+  border-top: solid 2px #D1C7BE;
 }
 #main > .inner > section:first-of-type {
   border-top: 0 !important;
@@ -2440,7 +2440,7 @@ button:disabled,
 }
 #search form:before {
   transform: scaleX(-1);
-  color: #7f888f;
+  color: #4A6051;
   content: "\f002";
   cursor: default;
   display: block;
@@ -2465,7 +2465,7 @@ button:disabled,
   -ms-flex-shrink: 0;
   flex-shrink: 0;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #f5f6f7;
+  background-color: #F7D2D3;
   font-size: 0.9em;
   position: relative;
   width: 26em;
@@ -2479,7 +2479,7 @@ button:disabled,
   width: 26em;
 }
 #sidebar > .inner > * {
-  border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+  border-bottom: solid 2px #D1C7BE;
   margin: 0 0 3.5em 0;
   padding: 0 0 3.5em 0;
 }
@@ -2492,7 +2492,7 @@ button:disabled,
   padding-bottom: 0;
 }
 #sidebar > .inner > .alt {
-  background-color: #eff1f2;
+  background-color: #f5c9cb;
   border-bottom: 0;
   margin: -2.2222222222em 0 4.4444444444em -2.2222222222em;
   padding: 2.2222222222em;
@@ -2615,14 +2615,14 @@ button:disabled,
     width: 7.25em;
   }
   #sidebar .toggle:before {
-    color: #7f888f;
+    color: #4A6051;
     margin-left: -0.0625em;
     margin-top: -0.25em;
     font-size: 1.1rem;
     z-index: 1;
   }
   #sidebar .toggle:after {
-    background: rgba(222, 225, 226, 0.75);
+    background: rgba(164, 185, 170, 0.75);
     border-radius: 0.375em;
     content: "";
     height: 3.5em;
@@ -2824,7 +2824,7 @@ button:disabled,
   transform: rotate(-180deg);
 }
 #menu > ul > li {
-  border-top: solid 1px rgba(210, 215, 217, 0.75);
+  border-top: solid 1px #D1C7BE;
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0;
 }
