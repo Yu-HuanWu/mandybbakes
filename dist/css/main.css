@@ -129,12 +129,12 @@ body, input, select, textarea {
 a {
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #f56a6a;
+  color: #4A6051;
   text-decoration: none;
 }
 a:hover {
-  border-bottom-color: #f56a6a;
-  color: #f56a6a !important;
+  border-bottom-color: #4A6051;
+  color: #4A6051 !important;
 }
 a:hover strong {
   color: inherit;
@@ -1398,7 +1398,7 @@ header p {
   text-transform: uppercase;
 }
 header.major > :last-child {
-  border-bottom: solid 3px #f56a6a;
+  border-bottom: solid 3px #4A6051;
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0;
@@ -1460,8 +1460,8 @@ input[type=search]:focus,
 input[type=url]:focus,
 select:focus,
 textarea:focus {
-  border-color: #f56a6a;
-  box-shadow: 0 0 0 1px #f56a6a;
+  border-color: #4A6051;
+  box-shadow: 0 0 0 1px #4A6051;
 }
 
 select {
@@ -1560,8 +1560,8 @@ input[type=radio]:checked + label:before {
 }
 input[type=checkbox]:focus + label:before,
 input[type=radio]:focus + label:before {
-  border-color: #f56a6a;
-  box-shadow: 0 0 0 1px #f56a6a;
+  border-color: #4A6051;
+  box-shadow: 0 0 0 1px #4A6051;
 }
 
 input[type=checkbox] + label:before {
@@ -1836,7 +1836,7 @@ ul.contact li:before {
   font-weight: 400;
 }
 ul.contact li:before {
-  color: #f56a6a;
+  color: #4A6051;
   display: inline-block;
   font-size: 1.5em;
   height: 1.125em;
@@ -1885,14 +1885,14 @@ ul.pagination li > .page {
   text-align: center;
 }
 ul.pagination li > .page.active {
-  background-color: #f56a6a;
+  background-color: #4A6051;
   color: #FBF8F9 !important;
 }
 ul.pagination li > .page.active:hover {
-  background-color: #f67878;
+  background-color: #516958;
 }
 ul.pagination li > .page.active:active {
-  background-color: #f45c5c;
+  background-color: #43574a;
 }
 ul.pagination li:first-child {
   padding-right: 0.75em;
@@ -1977,8 +1977,8 @@ button,
   background-color: transparent;
   border-radius: 0.375em;
   border: 0;
-  box-shadow: inset 0 0 0 2px #f56a6a;
-  color: #f56a6a !important;
+  box-shadow: inset 0 0 0 2px #4A6051;
+  color: #4A6051 !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -1998,14 +1998,14 @@ input[type=reset]:hover,
 input[type=button]:hover,
 button:hover,
 .button:hover {
-  background-color: rgba(245, 106, 106, 0.05);
+  background-color: rgba(74, 96, 81, 0.05);
 }
 input[type=submit]:active,
 input[type=reset]:active,
 input[type=button]:active,
 button:active,
 .button:active {
-  background-color: rgba(245, 106, 106, 0.15);
+  background-color: rgba(74, 96, 81, 0.15);
 }
 input[type=submit].icon:before,
 input[type=reset].icon:before,
@@ -2042,7 +2042,7 @@ input[type=reset].primary,
 input[type=button].primary,
 button.primary,
 .button.primary {
-  background-color: #f56a6a;
+  background-color: #4A6051;
   box-shadow: none;
   color: #FBF8F9 !important;
 }
@@ -2051,14 +2051,14 @@ input[type=reset].primary:hover,
 input[type=button].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-  background-color: #f67878;
+  background-color: #516958;
 }
 input[type=submit].primary:active,
 input[type=reset].primary:active,
 input[type=button].primary:active,
 button.primary:active,
 .button.primary:active {
-  background-color: #f45c5c;
+  background-color: #43574a;
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2136,7 +2136,7 @@ button:disabled,
   width: 10em;
 }
 .features article .icon:before {
-  color: #f56a6a;
+  color: #4A6051;
   font-size: 2.75rem;
   position: relative;
   top: 0.05em;
@@ -2256,11 +2256,7 @@ button:disabled,
   width: calc(33.3333333333% - 6em);
 }
 .posts article:nth-child(2n+1) {
-  background: #3d4449;
-  color: #FBF8F9;
-}
-.posts article:nth-child(2n+1) h3 {
-  color: #FBF8F9;
+  background: #B8C6B3;
 }
 .posts article:before {
   background: #D1C7BE;
@@ -2656,7 +2652,7 @@ button:disabled,
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
-  border-bottom: solid 5px #f56a6a;
+  border-bottom: solid 5px #4A6051;
   padding: 6em 0 1em 0;
   position: relative;
 }
@@ -2805,7 +2801,7 @@ button:disabled,
   padding: 0.625em 0;
 }
 #menu ul a:hover, #menu ul span:hover {
-  color: #f56a6a;
+  color: #4A6051;
 }
 #menu ul a.opener, #menu ul span.opener {
   transition: color 0.2s ease-in-out;
@@ -2833,7 +2829,7 @@ button:disabled,
   right: 0;
 }
 #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
-  color: #f56a6a;
+  color: #4A6051;
 }
 #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
   display: block;
