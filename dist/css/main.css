@@ -2237,6 +2237,10 @@ button:disabled,
   flex-wrap: wrap;
   margin: 0 0 2em -6em;
   width: calc(100% + 6em);
+  color: #3d4449;
+}
+.posts h3 {
+  margin-top: 1em;
 }
 .posts article {
   -moz-flex-grow: 0;
@@ -2244,9 +2248,19 @@ button:disabled,
   flex-grow: 0;
   -ms-flex-shrink: 1;
   flex-shrink: 1;
+  background: #F7D2D3;
+  border-radius: 1rem 1rem;
+  padding: 0 1.5em 1.5em;
   margin: 0 0 6em 6em;
   position: relative;
   width: calc(33.3333333333% - 6em);
+}
+.posts article:nth-child(2n+1) {
+  background: #3d4449;
+  color: #FBF8F9;
+}
+.posts article:nth-child(2n+1) h3 {
+  color: #FBF8F9;
 }
 .posts article:before {
   background: #D1C7BE;
@@ -2271,13 +2285,17 @@ button:disabled,
 .posts article > :last-child {
   margin-bottom: 0;
 }
+.posts article a {
+  border-radius: 0.375em 0.375em 0 0;
+}
 .posts article .image {
   display: block;
-  margin: 0 0 2em 0;
+  margin: 0 -1.5em;
 }
 .posts article .image img {
   display: block;
   width: 100%;
+  border-radius: 0;
 }
 @media screen and (min-width: 1681px) {
   .posts article:nth-child(3n+1):before {
