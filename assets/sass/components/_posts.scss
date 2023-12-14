@@ -31,12 +31,12 @@
 
 			// alternate bg color for odd posts
 			&:nth-child(2n + 1) {
-				background: _palette(fg-bold);
-				color: _palette(bg);
+				background: _palette(ag);
+				// color: _palette(bg);
 
-				h3 {
-					color: _palette(bg);
-				}
+				// h3 {
+				// 	color: _palette(bg);
+				// }
 			}
 
 			&:before {
