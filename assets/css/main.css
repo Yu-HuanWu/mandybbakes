@@ -2799,10 +2799,19 @@ button:disabled,
   display: block;
   font-size: 0.9em;
   padding: 0.625em 0;
+  padding-left: 10px;
 }
 #menu ul a:hover, #menu ul span:hover {
   color: #4A6051;
+  background-color: #f5c9cb;
+  border-radius: 5%;
 }
+
+#menu ul #navbar-selected {
+  background-color: #e0afb2;
+  border-radius: 5%;
+}
+
 #menu ul a.opener, #menu ul span.opener {
   transition: color 0.2s ease-in-out;
   text-decoration: none;
