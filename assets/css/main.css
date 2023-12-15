@@ -2807,6 +2807,11 @@ button:disabled,
   border-radius: 5%;
 }
 
+#menu ul a:active, #menu ul span:active {
+  background-color: #e0afb2;
+  border-radius: 5%;
+}
+
 #menu ul #navbar-selected {
   background-color: #e0afb2;
   border-radius: 5%;
