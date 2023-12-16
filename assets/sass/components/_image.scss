@@ -45,6 +45,9 @@
 
 			img {
 				width: 100%;
+				&:hover {
+					@include vendor('transform', 'scale(1.05)');
+				}
 			}
 		}
 
