@@ -2824,6 +2824,11 @@ button:disabled,
   background-color: #f5c9cb;
   border-radius: 5%;
 }
+#menu ul a:active, #menu ul span:active {
+  color: #4A6051;
+  background-color: #e0afb2;
+  border-radius: 5%;
+}
 #menu ul a.opener, #menu ul span.opener {
   transition: color 0.2s ease-in-out;
   text-decoration: none;
@@ -2851,10 +2856,6 @@ button:disabled,
 }
 #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
   color: #4A6051;
-}
-#menu ul a.opener.active, #menu ul span.opener.active {
-  background-color: #e0afb2;
-  transition: background-color 0.2s ease-in-out;
 }
 #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
   display: block;
