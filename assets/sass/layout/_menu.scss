@@ -28,6 +28,8 @@
 
 				&:hover {
 					color: _palette(accent);
+					background-color: _palette(m-accent-light);
+					border-radius: 5%;
 				}
 
 				&.opener {
@@ -54,6 +56,8 @@
 					}
 
 					&.active {
+						background-color: _palette(m-accent);
+						@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out'));
 						& + ul {
 							display: block;
 						}
@@ -63,6 +67,11 @@
 						}
 					}
 				}
+			}
+
+			#navbar-selected {
+				background-color: _palette(m-accent);
+				border-radius: 5%;
 			}
 		}
 
