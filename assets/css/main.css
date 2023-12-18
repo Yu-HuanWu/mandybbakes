@@ -1678,6 +1678,7 @@ input[type=radio] + label:before {
 }
 .image.fit img:hover {
   transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 .image.main {
   display: block;
@@ -2805,20 +2806,7 @@ button:disabled,
 }
 #menu ul a:hover, #menu ul span:hover {
   color: #4A6051;
-  background-color: #f5c9cb;
-  border-radius: 5%;
 }
-
-#menu ul a:active, #menu ul span:active {
-  background-color: #e0afb2;
-  border-radius: 5%;
-}
-
-#menu ul #navbar-selected {
-  background-color: #e0afb2;
-  border-radius: 5%;
-}
-
 #menu ul a.opener, #menu ul span.opener {
   transition: color 0.2s ease-in-out;
   text-decoration: none;
