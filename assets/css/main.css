@@ -2825,7 +2825,6 @@ button:disabled,
   border-radius: 5%;
 }
 #menu ul a:active, #menu ul span:active {
-  color: #4A6051;
   background-color: #e0afb2;
   border-radius: 5%;
 }
