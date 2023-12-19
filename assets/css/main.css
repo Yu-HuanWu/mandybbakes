@@ -1675,8 +1675,7 @@ input[type=radio] + label:before {
 }
 .image.fit img {
   width: 100%;
-  height: calc(width * 1.778);
-  max-height: 100px;
+  min-height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1697,7 +1696,12 @@ input[type=radio] + label:before {
     max-height: 320px;
   }
 }
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1680px) {
+  .image.fit img {
+    max-height: 380px;
+  }
+}
+@media screen and (min-width: 1920px) {
   .image.fit img {
     max-height: 550px;
   }
