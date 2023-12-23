@@ -5,9 +5,11 @@
 	 */
 
 	$(".add").change(function() {
-		var conceptName = $('.add').find(":selected").val();
-		console.log("hi", conceptName)
-		$(".orderForm > label:first-child").clone(true).insertBefore(".orderForm > button");
+		var cakeOrCupcake = $('.add').find(":selected").val();
+		console.log("hi", cakeOrCupcake)
+		if (cakeOrCupcake === "2") {
+			$(".orderForm > label:first-child").clone(true).insertBefore(".orderForm > button");
+		}
 		return false;
 	});
 
