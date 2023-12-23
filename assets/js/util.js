@@ -1,6 +1,17 @@
 (function($) {
 
 	/**
+	 * Testing dynamically changing form using jQuery
+	 */
+
+	$(".add").change(function() {
+		var conceptName = $('.add').find(":selected").val();
+		console.log("hi", conceptName)
+		$(".orderForm > label:first-child").clone(true).insertBefore(".orderForm > button");
+		return false;
+	});
+
+	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
 	 */
