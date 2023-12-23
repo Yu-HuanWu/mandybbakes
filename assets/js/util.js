@@ -7,8 +7,12 @@
 	$(".add").change(function() {
 		var cakeOrCupcake = $('.add').find(":selected").val();
 		console.log("hi", cakeOrCupcake)
-		if (cakeOrCupcake === "2") {
-			$(".orderForm > label:first-child").clone(true).insertBefore(".orderForm > button");
+		if (cakeOrCupcake === "cake") {
+			$(".cupcakesQuantity").css("display", "none");
+			$(".cakeSize").css("display", "");
+		} else if (cakeOrCupcake === "cupcakes") {
+			$(".cakeSize").css("display", "none");
+			$(".cupcakesQuantity").css("display", "");
 		}
 		return false;
 	});
