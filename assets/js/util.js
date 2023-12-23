@@ -4,8 +4,8 @@
 	 * Testing dynamically changing form using jQuery
 	 */
 
-	$(".add").change(function() {
-		var cakeOrCupcake = $('.add').find(":selected").val();
+	$(".cakeOrCupcakes").change(function() {
+		var cakeOrCupcake = $('.cakeOrCupcakes').find(":selected").val();
 		console.log("hi", cakeOrCupcake)
 		if (cakeOrCupcake === "cake") {
 			$(".cupcakesQuantity").css("display", "none");
