@@ -1,6 +1,23 @@
 (function($) {
 
 	/**
+	 * Testing dynamically changing form using jQuery
+	 */
+
+	$(".cakeOrCupcakes").change(function() {
+		var cakeOrCupcake = $('.cakeOrCupcakes').find(":selected").val();
+		console.log("hi", cakeOrCupcake)
+		if (cakeOrCupcake === "cake") {
+			$(".cupcakesQuantity").css("display", "none");
+			$(".cakeSize").css("display", "");
+		} else if (cakeOrCupcake === "cupcakes") {
+			$(".cakeSize").css("display", "none");
+			$(".cupcakesQuantity").css("display", "");
+		}
+		return false;
+	});
+
+	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
 	 */
