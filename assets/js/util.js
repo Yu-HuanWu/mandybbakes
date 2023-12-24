@@ -18,6 +18,20 @@
 	});
 
 	/**
+	 * dynamically change form based on delivery or pickup
+	 */
+
+	$(".deliveryMethod").change(function() {
+		var deliveryOrPickup = $('.deliveryMethod').find(":selected").val();
+		if (deliveryOrPickup === "delivery") {
+			$(".address").css("display", "");
+		} else if (deliveryOrPickup === "pickup") {
+			$(".address").css("display", "none");
+		}
+		return false;
+	});
+
+	/**
    *  Limit the order form date picker to today's date and beyond
    *  source: https://answers.laserfiche.com/questions/165725/Only-allow-future-dates-in-date-field
    */
