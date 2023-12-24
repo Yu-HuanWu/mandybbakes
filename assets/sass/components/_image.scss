@@ -45,8 +45,28 @@
 
 			img {
 				width: 100%;
+				min-height: 150px;
+				object-fit: cover;
+				object-position: center;
+			
+				@include breakpoint(medium) {
+					max-height: 200px;
+				}
+				@include breakpoint(large) {
+					max-height: 300px;
+				}
+				@include breakpoint(xlarge) {
+					max-height: 320px;
+				}
+				@media screen and (min-width: '1680px') {
+					max-height: 380px;	
+				}
+				@media screen and (min-width: '1920px') {
+					max-height: 550px;
+				}
 				&:hover {
 					@include vendor('transform', 'scale(1.05)');
+					@include vendor('transition', 'transform #{_duration(transition)} ease-in-out');
 				}
 			}
 		}
@@ -73,5 +93,40 @@
 			img {
 				@include vendor('transform', 'scale(1.075)');
 			}
+		}
+	}
+
+	.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			grid-auto-rows: 1fr;
+			align-items: stretch;
+			gap: 1rem;
+
+		img {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			@include image-styles;
+		}
+
+		@include breakpoint(medium) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		@include breakpoint(large) {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		@include breakpoint(xlarge) {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		@media screen and (min-width: '1680px') {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		@media screen and (min-width: '1920px') {
+			grid-template-columns: repeat(3, minmax(300px, 1fr));
 		}
 	}

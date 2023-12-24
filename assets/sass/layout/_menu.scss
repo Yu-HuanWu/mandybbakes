@@ -24,10 +24,17 @@
 				cursor: pointer;
 				display: block;
 				font-size: 0.9em;
-				padding: 0.625em 0;
+				padding: 0.625em 0.95em;
 
 				&:hover {
 					color: _palette(accent);
+					background-color: _palette(m-accent-light);
+					border-radius: 5%;
+				}
+				
+				&:active {
+					background-color: _palette(m-accent);
+					border-radius: 5%;
 				}
 
 				&.opener {
@@ -63,6 +70,11 @@
 						}
 					}
 				}
+			}
+
+			#navbar-selected {
+				background-color: _palette(m-accent);
+				border-radius: 5%;
 			}
 		}
 
