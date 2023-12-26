@@ -1690,6 +1690,11 @@ a.image {
 }
 a.image img {
   transition: transform 0.2s ease;
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 a.image:hover img {
   transform: scale(1.075);
@@ -2321,10 +2326,19 @@ button:disabled,
 .posts article .image {
   display: block;
   margin: 0 0 2em 0;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
 }
 .posts article .image img {
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 1681px) {
   .posts article:nth-child(3n+1):before {

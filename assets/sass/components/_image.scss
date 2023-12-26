@@ -64,6 +64,10 @@
 
 		img {
 			@include vendor('transition', 'transform #{_duration(transition)} ease');
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
 		}
 
 		&:hover {
