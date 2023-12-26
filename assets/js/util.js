@@ -18,6 +18,36 @@
 	});
 
 	/**
+	 * dynamically change form based on delivery or pickup
+	 */
+
+	$(".deliveryMethod").change(function() {
+		var deliveryOrPickup = $('.deliveryMethod').find(":selected").val();
+		if (deliveryOrPickup === "delivery") {
+			$(".address").css("display", "");
+		} else if (deliveryOrPickup === "pickup") {
+			$(".address").css("display", "none");
+		}
+		return false;
+	});
+
+	/**
+   *  Limit the order form date picker to today's date and beyond
+   *  source: https://answers.laserfiche.com/questions/165725/Only-allow-future-dates-in-date-field
+   */
+  $(document).ready(function () {
+    var todaysDate = new Date();
+
+    // get today's date
+    var year = todaysDate.getFullYear(); //yyyy
+    var month = ("0" + (todaysDate.getMonth() + 1)).slice(-2); //mm
+    var day = ("0" + todaysDate.getDate()).slice(-2); //dd
+
+    var dtToday = year + "-" + month + "-" + day;
+    $("#orderNeededDate").attr("min", dtToday);
+  });
+
+	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
 	 */

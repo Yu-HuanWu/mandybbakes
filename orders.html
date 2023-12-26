@@ -90,12 +90,67 @@
 
 										<label>
 											When do you need the cake by?
-											<input type="date" name="date">
+											<input type="date" name="date" id="orderNeededDate" required>
 										</label>
 
 										<label>
 											What kind of event are you celebrating? <i>(eg: birthday, anniversary, etc)</i>
 											<input type="text" name="event">
+										</label>
+
+										<label class="cakeFlavors">
+											Cake Flavor
+											<select name="cake flavor" required>
+												<option value="">- Choose one -</option>
+												<option value="1">Vanilla</option>
+												<option value="2">Chocolate</option>
+											</select>
+										</label>
+
+										<label class="frostingFlavors">
+											Frosting Flavor
+											<select name="frosting flavor" required>
+												<option value="">- Choose one -</option>
+												<option value="1">Vanilla</option>
+												<option value="2">Chocolate</option>
+											</select>
+										</label>
+
+										<label class="dietRestrictions">
+											Please list any allergies or dietary restrictions
+											<input type="text" name="dietRestrictions" placeholder="eggs, soy, wheat, etc. (leave blank if n/a)">
+										</label>
+
+										<label class="colorPalette">
+											Color Palette
+											<label class="colorPalettePrimary">Primary<input type="color" name="colorPalettePrimary"></label>
+											<label class="colorPaletteSecondary">Secondary<input type="color" name="colorPaletteSecondary"></label>
+											<label class="colorPaletteAccent">Accent<input type="color" name="colorPaletteAccent"></label>
+										</label>
+
+										<label class="partyTheme">
+											Party Theme?
+											<input type="text" name="partyTheme" placeholder="zoo animals">
+										</label>
+
+										<label class="deliveryMethod">
+											Delivery* or Pickup?
+											*additional cost for delivery
+											<select name="deliveryMethod" required>
+												<option value="">- Choose one -</option>
+												<option value="delivery">Delivery</option>
+												<option value="pickup">Pickup</option>
+											</select>
+										</label>
+
+										<label class="phone">
+											Phone Number
+											<input type="tel" name="phone" placeholder="123-456-7890" required>
+										</label>
+
+										<label class="address" style="display: none;">
+											Address for Delivery
+											<input type="text" name="address" placeholder="1234 Somewhere Road #8254, Nashville, TN 00000-0000">
 										</label>
 
 										<label>
