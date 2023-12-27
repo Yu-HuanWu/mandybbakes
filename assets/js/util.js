@@ -10,9 +10,11 @@
 		if (cakeOrCupcake === "cake") {
 			$(".cupcakesQuantity").css("display", "none");
 			$(".cakeSize").css("display", "");
+			$(".cupcakesQuantitySelect").val("");
 		} else if (cakeOrCupcake === "cupcakes") {
 			$(".cakeSize").css("display", "none");
 			$(".cupcakesQuantity").css("display", "");
+			$(".cakeSizeSelect").val("");
 		}
 		return false;
 	});
