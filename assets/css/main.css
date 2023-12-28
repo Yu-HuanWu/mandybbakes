@@ -2817,6 +2817,17 @@ button:disabled,
 }
 
 /* Footer */
+#footer.cta {
+  background-color: #D1C7BE;
+  color: #3d4449;
+  padding: 1em 0;
+  border-radius: 1em;
+}
+
+#footer.cta p:last-child {
+ margin-bottom: 0;
+}
+
 #footer .copyright {
   color: #9fa3a6;
   font-size: 0.9em;
