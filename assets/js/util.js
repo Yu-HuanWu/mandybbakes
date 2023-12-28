@@ -1,7 +1,7 @@
 (function($) {
 
 	/**
-	 * Testing dynamically changing form using jQuery
+	 * Dynamically changing the Order form based on certain user inputs
 	 */
 
 	$(".cakeOrCupcakes").change(function() {
@@ -10,9 +10,11 @@
 		if (cakeOrCupcake === "cake") {
 			$(".cupcakesQuantity").css("display", "none");
 			$(".cakeSize").css("display", "");
+			$(".cupcakesQuantitySelect").val("");
 		} else if (cakeOrCupcake === "cupcakes") {
 			$(".cakeSize").css("display", "none");
 			$(".cupcakesQuantity").css("display", "");
+			$(".cakeSizeSelect").val("");
 		}
 		return false;
 	});
@@ -35,17 +37,17 @@
    *  Limit the order form date picker to today's date and beyond
    *  source: https://answers.laserfiche.com/questions/165725/Only-allow-future-dates-in-date-field
    */
-  $(document).ready(function () {
-    var todaysDate = new Date();
+	$(document).ready(function () {
+	var todaysDate = new Date();
 
-    // get today's date
-    var year = todaysDate.getFullYear(); //yyyy
-    var month = ("0" + (todaysDate.getMonth() + 1)).slice(-2); //mm
-    var day = ("0" + todaysDate.getDate()).slice(-2); //dd
+	// get today's date
+	var year = todaysDate.getFullYear(); //yyyy
+	var month = ("0" + (todaysDate.getMonth() + 1)).slice(-2); //mm
+	var day = ("0" + todaysDate.getDate()).slice(-2); //dd
 
-    var dtToday = year + "-" + month + "-" + day;
-    $("#orderNeededDate").attr("min", dtToday);
-  });
+	var dtToday = year + "-" + month + "-" + day;
+	$("#orderNeededDate").attr("min", dtToday);
+	});
 
 	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().

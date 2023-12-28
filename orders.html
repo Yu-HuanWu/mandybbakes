@@ -56,102 +56,115 @@
 									If delivery, contact phone number and address to be delivered. (Delivery is an extra fee) 
 									-->
 									<form class="orderForm" action="https://formspree.io/f/xvoepdpy" method="POST">
-										<label>
-											Your email:
-											<input type="email" name="email">
-										</label>
 
-										<label >
-											What would you like?
-											<select class="cakeOrCupcakes" name="cake or cupcakes">
-												<option value="">- Choose one -</option>
-												<option value="cake">Cake</option>
-												<option value="cupcakes">Cupcakes</option>
-											</select>
-										</label>
+										<div>
+											<h3>Product Selection:</h3>
+									
+											<label >
+												What would you like?
+												<select class="cakeOrCupcakes" name="cake or cupcakes">
+													<option value="">- Choose one -</option>
+													<option value="cake">Cake</option>
+													<option value="cupcakes">Cupcakes</option>
+												</select>
+											</label>
 
-										<label class="cakeSize" style="display: none;">
-											Size of the cake
-											<select name="cake size">
-												<option value="">- Choose one -</option>
-												<option value="1">Size 1</option>
-												<option value="2">Size 2</option>
-											</select>
-										</label>
+											<label class="cakeSize" style="display: none;">
+												Size of the cake
+												<select class="cakeSizeSelect" name="cake size">
+													<option value="">- Choose one -</option>
+													<option value="4in">4-inch (8 servings)</option>
+													<option value="6in">6-inch (12 servings)</option>
+													<option value="8in">8-inch (24 servings)</option>
+													<option value="10in">10-inch (34 servings)</option>
+												</select>
+											</label>
 
-										<label class="cupcakesQuantity" style="display: none;">
-											Quantity of the cupcakes
-											<select name="cupcakes quantity">
-												<option value="">- Choose one -</option>
-												<option value="6">6</option>
-												<option value="12">12</option>
-											</select>
-										</label>
+											<label class="cupcakesQuantity" style="display: none;">
+												Quantity of the cupcakes
+												<select class="cupcakesQuantitySelect" name="cupcakes quantity">
+													<option value="">- Choose one -</option>
+													<option value="6">6</option>
+													<option value="12">12</option>
+												</select>
+											</label>
 
-										<label>
-											When do you need the cake by?
-											<input type="date" name="date" id="orderNeededDate" required>
-										</label>
+											<label>
+												When do you need the cake by?
+												<input type="date" name="date" id="orderNeededDate" required>
+											</label>
 
-										<label>
-											What kind of event are you celebrating? <i>(eg: birthday, anniversary, etc)</i>
-											<input type="text" name="event">
-										</label>
+											<label>
+												What kind of event are you celebrating? <i>(eg: birthday, anniversary, etc)</i>
+												<input type="text" name="event">
+											</label>
 
-										<label class="cakeFlavors">
-											Cake Flavor
-											<select name="cake flavor" required>
-												<option value="">- Choose one -</option>
-												<option value="1">Vanilla</option>
-												<option value="2">Chocolate</option>
-											</select>
-										</label>
+											<label class="cakeFlavors">
+												Cake Flavor
+												<select name="cake flavor" required>
+													<option value="">- Choose one -</option>
+													<option value="1">Vanilla</option>
+													<option value="2">Chocolate</option>
+												</select>
+											</label>
 
-										<label class="frostingFlavors">
-											Frosting Flavor
-											<select name="frosting flavor" required>
-												<option value="">- Choose one -</option>
-												<option value="1">Vanilla</option>
-												<option value="2">Chocolate</option>
-											</select>
-										</label>
+											<label class="frostingFlavors">
+												Frosting Flavor
+												<select name="frosting flavor" required>
+													<option value="">- Choose one -</option>
+													<option value="1">Vanilla</option>
+													<option value="2">Chocolate</option>
+												</select>
+											</label>
 
-										<label class="dietRestrictions">
-											Please list any allergies or dietary restrictions
-											<input type="text" name="dietRestrictions" placeholder="eggs, soy, wheat, etc. (leave blank if n/a)">
-										</label>
+											<label class="dietRestrictions">
+												Please list any allergies or dietary restrictions
+												<input type="text" name="dietRestrictions" placeholder="eggs, soy, wheat, etc. (leave blank if n/a)">
+											</label>
 
-										<label class="colorPalette">
-											Color Palette
-											<label class="colorPalettePrimary">Primary<input type="color" name="colorPalettePrimary"></label>
-											<label class="colorPaletteSecondary">Secondary<input type="color" name="colorPaletteSecondary"></label>
-											<label class="colorPaletteAccent">Accent<input type="color" name="colorPaletteAccent"></label>
-										</label>
+											<label class="colorPalette">
+												Color Palette
+												<label class="colorPalettePrimary">Primary<input type="color" name="colorPalettePrimary"></label>
+												<label class="colorPaletteSecondary">Secondary<input type="color" name="colorPaletteSecondary"></label>
+												<label class="colorPaletteAccent">Accent<input type="color" name="colorPaletteAccent"></label>
+											</label>
 
-										<label class="partyTheme">
-											Party Theme?
-											<input type="text" name="partyTheme" placeholder="zoo animals">
-										</label>
+											<label class="partyTheme">
+												Party Theme?
+												<input type="text" name="partyTheme" placeholder="zoo animals">
+											</label>
 
-										<label class="deliveryMethod">
-											Delivery* or Pickup?
-											*additional cost for delivery
-											<select name="deliveryMethod" required>
-												<option value="">- Choose one -</option>
-												<option value="delivery">Delivery</option>
-												<option value="pickup">Pickup</option>
-											</select>
-										</label>
+										</div>
 
-										<label class="phone">
-											Phone Number
-											<input type="tel" name="phone" placeholder="123-456-7890" required>
-										</label>
+										<div>
+											<h3>Contact Info:</h3>
 
-										<label class="address" style="display: none;">
-											Address for Delivery
-											<input type="text" name="address" placeholder="1234 Somewhere Road #8254, Nashville, TN 00000-0000">
-										</label>
+											<label>
+												Your email:
+												<input type="email" name="email" required>
+											</label>
+
+											<label class="deliveryMethod">
+												Delivery or Pickup? <h6>(additional cost for delivery)</h6>
+												<select name="deliveryMethod" required>
+													<option value="">- Choose one -</option>
+													<option value="delivery">Delivery</option>
+													<option value="pickup">Pickup</option>
+												</select>
+											</label>
+
+											<label class="address" style="display: none;">
+												Address for Delivery
+												<input type="text" name="address" placeholder="1234 Somewhere Road #8254, Sacramento, CA 00000-0000">
+											</label>
+
+											<label class="phone">
+												Phone Number
+												<input type="tel" name="phone" placeholder="123-456-7890" required>
+											</label>
+
+
+										</div>
 
 										<label>
 											Additional Info:
