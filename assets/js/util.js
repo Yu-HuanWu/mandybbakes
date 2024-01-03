@@ -50,6 +50,19 @@
 	});
 
 	/**
+	 *  Pre-fill order form based on user selection from the homepage
+	 */
+	$(".button").click(function() {
+		localStorage.setItem("form-data", $(this).data("order-type"));
+	});
+
+  $(document).ready(() => {
+    var data = localStorage.getItem("form-data");
+    $("#event-type").val(data);
+  });
+
+
+	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
 	 */
