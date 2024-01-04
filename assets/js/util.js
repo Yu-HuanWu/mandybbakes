@@ -56,10 +56,20 @@
 		localStorage.setItem("form-data", $(this).data("order-type"));
 	});
 
-  $(document).ready(() => {
-    var data = localStorage.getItem("form-data");
-    $("#event-type").val(data);
-  });
+	$(document).ready(() => {
+		var data = localStorage.getItem("form-data");
+		$("#event-type").val(data);
+		
+		// select cake or cupcakes on order form based on user selection
+		if (data === "cupcakes") {
+			$(".cakeOrCupcakes option[value='cupcakes']").prop("selected", true).change();
+		} else if (data === "birthday-kids" || data === "wedding" || data === "birthday") {
+			$(".cakeOrCupcakes option[value='cake']").prop("selected", true).change();
+		}
+
+		// clean up local storage
+		localStorage.removeItem("form-data", $(this).data("order-type"));
+	});
 
 
 	/**
