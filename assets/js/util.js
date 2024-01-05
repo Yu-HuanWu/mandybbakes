@@ -52,7 +52,7 @@
 	/**
 	 *  Pre-fill order form based on user selection from the homepage
 	 */
-	$(".button").click(function() {
+	$(".prefill-button").click(function() {
 		localStorage.setItem("form-data", $(this).data("order-type"));
 	});
 
@@ -60,6 +60,7 @@
 		var data = localStorage.getItem("form-data");
 		$("#event-type").val(data);
 		
+		// TODO: continue logic/handling based on client requirements 		
 		// select cake or cupcakes on order form based on user selection
 		if (data === "cupcakes") {
 			$(".cakeOrCupcakes option[value='cupcakes']").prop("selected", true).change();
