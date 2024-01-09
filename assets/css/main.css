@@ -2699,7 +2699,6 @@ button:disabled,
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
-  border-bottom: solid 5px #4A6051;
   padding: 6em 0 1em 0;
   position: relative;
 }
@@ -2934,4 +2933,20 @@ button:disabled,
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 10px;
+}
+
+.polka-dots {
+  margin-bottom: 0.5em;
+  display: flex;
+  background-image:
+    radial-gradient(#F7D2D3 26%, transparent 26%),
+    radial-gradient(#F7D2D3 26%, transparent 26%);
+  background-position: 0px 0px, 22px 10px;
+  background-size: 14px 14px;
+  background-color: #B8C6B3;
+  min-height: 0.75em;
+}
+
+.w-full {
+  width: 100%;
 }
