@@ -38,15 +38,15 @@
    *  source: https://answers.laserfiche.com/questions/165725/Only-allow-future-dates-in-date-field
    */
 	$(document).ready(function () {
-	var todaysDate = new Date();
+		const oneMonthFromToday = new Date();
+		oneMonthFromToday.setDate(oneMonthFromToday.getDate() + 30)
+		// get the earliest date for cake completion (1 month from today)
+		var year = oneMonthFromToday.getFullYear(); //yyyy
+		var month = ("0" + (oneMonthFromToday.getMonth() + 1)).slice(-2); //mm
+		var day = ("0" + oneMonthFromToday.getDate()).slice(-2); //dd
 
-	// get today's date
-	var year = todaysDate.getFullYear(); //yyyy
-	var month = ("0" + (todaysDate.getMonth() + 1)).slice(-2); //mm
-	var day = ("0" + todaysDate.getDate()).slice(-2); //dd
-
-	var dtToday = year + "-" + month + "-" + day;
-	$("#orderNeededDate").attr("min", dtToday);
+		var dtToday = year + "-" + month + "-" + day;
+		$("#orderNeededDate").attr("min", dtToday);
 	});
 
 	/**
