@@ -41,11 +41,11 @@
 		const oneMonthFromToday = new Date();
 		oneMonthFromToday.setDate(oneMonthFromToday.getDate() + 30)
 		// get the earliest date for cake completion (1 month from today)
-		var year = oneMonthFromToday.getFullYear(); //yyyy
-		var month = ("0" + (oneMonthFromToday.getMonth() + 1)).slice(-2); //mm
-		var day = ("0" + oneMonthFromToday.getDate()).slice(-2); //dd
+		const year = oneMonthFromToday.getFullYear(); //yyyy
+		const month = ("0" + (oneMonthFromToday.getMonth() + 1)).slice(-2); //mm
+		const day = ("0" + oneMonthFromToday.getDate()).slice(-2); //dd
 
-		var newDate = year + "-" + month + "-" + day;
+		const newDate = year + "-" + month + "-" + day;
 		$("#orderNeededDate").attr("min", newDate);
 	});
 
