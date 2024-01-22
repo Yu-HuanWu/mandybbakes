@@ -45,8 +45,8 @@
 		var month = ("0" + (oneMonthFromToday.getMonth() + 1)).slice(-2); //mm
 		var day = ("0" + oneMonthFromToday.getDate()).slice(-2); //dd
 
-		var dtToday = year + "-" + month + "-" + day;
-		$("#orderNeededDate").attr("min", dtToday);
+		var newDate = year + "-" + month + "-" + day;
+		$("#orderNeededDate").attr("min", newDate);
 	});
 
 	/**
