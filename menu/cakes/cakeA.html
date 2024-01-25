@@ -64,7 +64,12 @@
             
               <div>
                 <h3>Select Your Options:</h3>
-            
+                
+                <!-- Pass Cake Name to Form -->
+                <label class="hidden">
+                  <input type="text" name="cakeName" value="Cake A" readonly>
+                </label>
+
                 <label class="hidden">
                   What would you like?
                   <select class="cakeOrCupcakes" name="cake or cupcakes">
@@ -100,8 +105,8 @@
                 </label>
             
                 <label>
-                  Add a Custom Inscription?
-                  <input type="text" name="event" id="event-type" placeholder="leave blank if N/A">
+                  Add a Custom Inscription? <i>Limit 40 chars</i> <!-- #TODO - ADD CHARACTER LIMIT -->
+                  <input type="text" name="event" id="event-type" placeholder="leave blank if N/A" maxlength="40">
                 </label>
             
                 <!-- <label class="cakeFlavors">
