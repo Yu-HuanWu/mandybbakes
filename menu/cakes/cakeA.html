@@ -60,9 +60,6 @@
                 <li>10-inch (34 servings)</li>
               </ul>
             </div>
-            <ul class="actions">
-              <li><a href="../../orders.html" class="button big">Order Now</a></li>
-            </ul>
             <form class="orderForm" action="https://formspree.io/f/xvoepdpy" method="POST">
             
               <div>
@@ -103,8 +100,8 @@
                 </label>
             
                 <label>
-                  Add a Custom Inscription? <i>leave blank if N/A</i>
-                  <input type="text" name="event" id="event-type">
+                  Add a Custom Inscription?
+                  <input type="text" name="event" id="event-type" placeholder="leave blank if N/A">
                 </label>
             
                 <!-- <label class="cakeFlavors">
@@ -132,15 +129,25 @@
             
                 <label class="colorPalette">
                   Color Palette
-                  <label class="colorPalettePrimary">Primary<input type="color" name="colorPalettePrimary"></label>
-                  <label class="colorPaletteSecondary">Secondary<input type="color" name="colorPaletteSecondary"></label>
-                  <label class="colorPaletteAccent">Accent<input type="color" name="colorPaletteAccent"></label>
+                  <div class="color-palette"><input type="radio" id="Bright" name="colorPalette" value="Bright"><label for="Bright">Bright</label>
+                    <div class="color-choice"><img src="../../images/color_palettes/bright.png" alt="color choice" /></div>
+                  </div>
+                  <div class="color-palette"><input type="radio" id="Pastel" name="colorPalette" value="Pastel"><label for="Pastel">Pastel</label>
+                    <div class="color-choice"><img src="../../images/color_palettes/pastel.png" alt="color choice" /></div>
+                  </div>
+                  <div class="color-palette"><input type="radio" id="BlackWhiteGold" name="colorPalette" value="Black, White, Gold"><label
+                      for="BlackWhiteGold">Black, White, Gold</label>
+                    <div class="color-choice"><img src="../../images/color_palettes/black_white_gold.png" alt="color choice" /></div>
+                  </div>
+                  <div class="color-palette"><input type="radio" id="Retro" name="colorPalette" value="Retro"><label for="Retro">Retro</label>
+                    <div class="color-choice"><img src="../../images/color_palettes/retro.png" alt="color choice" /></div>
+                  </div>
                 </label>
             
-                <label class="partyTheme">
+                <!-- <label class="partyTheme">
                   Party Theme?
                   <input type="text" name="partyTheme" placeholder="zoo animals">
-                </label>
+                </label> -->
             
               </div>
             
@@ -179,7 +186,7 @@
                 <textarea name="additional info"></textarea>
               </label>
               <!-- your other form fields go here -->
-              <button type="submit">Send</button>
+              <button type="submit" class="button big">Order Now</button>
             </form>
           </div>
         </section>
