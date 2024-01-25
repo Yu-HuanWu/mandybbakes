@@ -37,6 +37,13 @@
     return false;
   });
 
+	/** Clear Form After Submission */
+	$(window).on('beforeunload', function() {
+		$('form').each(function() {
+			this.reset();
+		});
+	});
+
 	/**
 	 * dynamically change form based on delivery or pickup
 	 */
