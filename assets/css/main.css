@@ -2772,6 +2772,7 @@ button:disabled,
 }
 #banner .image-left {
   margin: 0 0 2em 0;
+  max-height: 75vh;
 }
 #banner .image img {
   height: 100%;
@@ -2944,4 +2945,8 @@ button:disabled,
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 10px;
+}
+
+.orderForm .hidden {
+  display: none;
 }
