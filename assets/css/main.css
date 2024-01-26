@@ -2935,3 +2935,120 @@ button:disabled,
   margin-bottom: 1em;
   border-radius: 10px;
 }
+
+/* Expanding Panels */
+#expandingPanels ul {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #3d4449;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#expandingPanels ul a,
+#expandingPanels ul span {
+  border-bottom: 0;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font-size: 0.9em;
+  padding: 0.625em 0.95em;
+}
+
+#expandingPanels ul a:hover,
+#expandingPanels ul span:hover {
+  color: #4A6051;
+  background-color: rgba(67, 87, 74, 0.11);
+  border-radius: 25px;
+}
+
+#expandingPanels ul a:active,
+#expandingPanels ul span:active {
+  background-color: #d2d2d2;
+  border-radius: 25px;
+}
+
+#expandingPanels ul a.opener,
+#expandingPanels ul span.opener {
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+
+#expandingPanels ul a.opener:before,
+#expandingPanels ul span.opener:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  text-transform: none !important;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+#expandingPanels ul a.opener:before,
+#expandingPanels ul span.opener:before {
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  color: #4A6051;
+  content: "\f078";
+  position: absolute;
+  right: 0;
+  margin-right: 1em;
+}
+
+#expandingPanels ul a.opener:hover:before,
+#expandingPanels ul span.opener:hover:before {
+  color: #4A6051;
+}
+
+#expandingPanels ul a.opener.active+p,
+#expandingPanels ul span.opener.active+p,
+#expandingPanels ul a.opener.active+ul,
+#expandingPanels ul span.opener.active+ul {
+  display: block;
+}
+
+#expandingPanels ul a.opener.active:before,
+#expandingPanels ul span.opener.active:before {
+  transform: rotate(-180deg);
+}
+
+#expandingPanels>ul>li {
+  border-top: solid 1px #D1C7BE;
+  margin: 0.5em 0 0 0;
+  padding: 0.5em 0 0 0;
+}
+
+#expandingPanels>ul>li>p,
+#expandingPanels>ul>li>ul {
+  color: #9fa3a6;
+  display: none;
+  margin: 0.5em 0 1.5em 0;
+  padding-left: 1em;
+}
+
+#expandingPanels>ul>li>ul a,
+#expandingPanels>ul>li>ul span {
+  font-size: 0.8em;
+}
+
+#expandingPanels>ul>li>ul>li {
+  margin: 0.125em 0 0 0;
+  padding: 0.125em 0 0 0;
+}
+
+#expandingPanels>ul>li:first-child {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
