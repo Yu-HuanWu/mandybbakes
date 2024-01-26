@@ -2983,3 +2983,22 @@ button:disabled,
 .orderForm .color-choice img {
   width: 100%;
 }
+
+.related-posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.related-posts > article {
+  flex: 4;
+  border: none;
+  width: 100%;
+} 
+
+.related-posts > article::before {
+  display: none;
+}
+
+.related-posts>article::after {
+  display: none;
+}
