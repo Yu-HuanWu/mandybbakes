@@ -3012,7 +3012,9 @@ button:disabled,
 }
 
 #expandingPanels ul a.opener.active+p,
-#expandingPanels ul span.opener.active+p {
+#expandingPanels ul span.opener.active+p,
+#expandingPanels ul a.opener.active+ul,
+#expandingPanels ul span.opener.active+ul {
   display: block;
 }
 
