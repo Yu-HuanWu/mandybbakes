@@ -19,24 +19,6 @@
 		return false;
 	});
 
-	  /**
-   * Intial loading of Order form based on product type
-   */
-  $(document).ready(function () {
-    var cakeOrCupcake = $(".cakeOrCupcakes").find(":selected").val();
-    console.log("hi", cakeOrCupcake);
-    if (cakeOrCupcake === "cake") {
-      $(".cupcakesQuantity").css("display", "none");
-      $(".cakeSize").css("display", "");
-      $(".cupcakesQuantitySelect").val("");
-    } else if (cakeOrCupcake === "cupcakes") {
-      $(".cakeSize").css("display", "none");
-      $(".cupcakesQuantity").css("display", "");
-      $(".cakeSizeSelect").val("");
-    }
-    return false;
-  });
-
 	/** Clear Form After Submission */
 	$(window).on('beforeunload', function() {
 		$('form').each(function() {
