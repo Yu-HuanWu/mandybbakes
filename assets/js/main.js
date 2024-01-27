@@ -259,4 +259,29 @@
 
 			});
 
+	// Expanding Panels.
+	var $expPanels = $('#expandingPanels'),
+		$expPanels_openers = $expPanels.children('ul').find('.opener');
+
+	// Openers.
+	$expPanels_openers.each(function () {
+
+		var $this = $(this);
+
+		$this.on('click', function (event) {
+
+			// Prevent default.
+			event.preventDefault();
+
+			// Toggle.
+			$expPanels_openers.not($this).removeClass('active');
+			$this.toggleClass('active');
+
+			// Trigger resize (sidebar lock).
+			$window.triggerHandler('resize.sidebar-lock');
+
+		});
+
+	});
+
 })(jQuery);
