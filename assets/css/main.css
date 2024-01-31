@@ -2940,8 +2940,13 @@ button:disabled,
   padding-top: 0;
 }/*# sourceMappingURL=main.css.map */
 
-.item-name > h1 {
+.item-details h1 {
   font-size: 3em;
+}
+
+.item-details h2 {
+  font-size: 1.5em;
+  margin: 0 0 0.5em 0;
 }
 
 .orderForm > div {
