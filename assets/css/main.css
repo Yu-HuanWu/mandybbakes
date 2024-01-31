@@ -2757,6 +2757,9 @@ button:disabled,
   flex-shrink: 1;
   width: 50%;
 }
+#banner .content-right {
+  margin: 0 0 2em 4em;
+}
 #banner .image {
   -moz-flex-grow: 0;
   -ms-flex-grow: 0;
@@ -2766,6 +2769,10 @@ button:disabled,
   display: block;
   margin: 0 0 2em 4em;
   width: 50%;
+}
+#banner .image-left {
+  margin: 0 0 2em 0;
+  max-height: 75vh;
 }
 #banner .image img {
   height: 100%;
@@ -2797,6 +2804,9 @@ button:disabled,
     flex-shrink: 0;
     width: 100%;
   }
+  #banner .content-right {
+    margin: 0 0 2em 0;
+  }
   #banner .image {
     -moz-flex-grow: 0;
     -ms-flex-grow: 0;
@@ -2813,6 +2823,7 @@ button:disabled,
 @media screen and (orientation: portrait) and (max-width: 480px) {
   #banner .image {
     max-height: 35vh;
+    order: 1;
   }
 }
 
@@ -2929,11 +2940,76 @@ button:disabled,
   padding-top: 0;
 }/*# sourceMappingURL=main.css.map */
 
+.item-details h1 {
+  font-size: 3em;
+}
+
+.item-details h2 {
+  font-size: 1.5em;
+  margin: 0 0 0.5em 0;
+}
+
 .orderForm > div {
   background-color: #43574a1c;
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 10px;
+}
+
+.orderForm .hidden {
+  display: none;
+}
+
+.orderForm .color-palette {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderForm .color-palette > * {
+  display: flex;
+}
+
+.orderForm .color-palette > input {
+  flex: 0 1 auto;
+  margin-left: 1em;
+}
+
+.orderForm .color-palette > label {
+  flex: 2;
+  width: 100%;
+  margin: 0;
+}
+
+.orderForm .color-choice {
+  display: flex;
+  max-height: 2.5em;
+  flex: 3;
+}
+
+.orderForm .color-choice img {
+  width: 100%;
+}
+
+.related-posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.related-posts > article {
+  flex: 4;
+  border: none;
+  width: 100%;
+} 
+
+.related-posts > article::before {
+  display: none;
+}
+
+.related-posts>article::after {
+  display: none;
 }
 
 /* Expanding Panels */

@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Cupcake A — Mandy B. Bakes</title>
+  <meta property="og:title" content="Mandy B Bakes" />
+  <!-- <meta property="og:image" content="images/bg.jpg" /> -->
+  <meta property="og:description" content="Amanda B's Online Bakery" />
+  <meta property="og:url" content="https://yu-huanwu.github.io/mandybbakes/" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="icon" type="image/x-icon" href="../../images/favicon.ico" />
+</head>
+
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+
+        <!-- Header -->
+        <header id="header">
+          <a href="../../index.html" class="logo"><strong>Mandy B. Bakes</strong></a>
+          <ul class="icons">
+            <li><a href="https://instagram.com/mandyb.bakes" class="icon brands fa-instagram"><span
+                  class="label">Instagram</span></a></li>
+          </ul>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+          <span class="image image-left object">
+            <img src="../../images/cakes/cake_pic09.jpg" alt="Amanda next to two-tiered wedding cake" />
+          </span>
+          <div class="content content-right item-details">
+            <header>
+              <h1>Cupcake A</h1>
+            </header>
+            <h2>Description:</h2>
+            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
+              Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus
+              nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit
+              nullam.</p>
+            <form class="orderForm" action="https://formspree.io/f/xvoepdpy" method="POST">
+            
+              <div>
+                <h3>Select Your Options:</h3>
+                
+                <!-- Pass Cupcake Name to Form -->
+                <label class="hidden">
+                  <input type="text" name="itemName" value="Cupcake A" readonly>
+                </label>
+
+                <label class="hidden">
+                  What would you like?
+                  <select class="cakeOrCupcakes" name="cake or cupcakes">
+                    <option value="">- Choose one -</option>
+                    <option value="cake">Cake</option>
+                    <option value="cupcakes" selected>Cupcakes</option>
+                  </select>
+                </label>
+            
+                <label class="cupcakesQuantity">
+                  Quantity of the cupcakes
+                  <select class="cupcakesQuantitySelect" name="cupcakes quantity">
+                    <option value="">- Choose one -</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                  </select>
+                </label>
+            
+                <label>
+                  When do you need the cake by?
+                  <input type="date" name="date" id="orderNeededDate" required>
+                </label>
+            
+                <label>
+                  Add a Custom Inscription? <i>Limit 40 chars</i>
+                  <input type="text" name="event" id="event-type" placeholder="leave blank if N/A" maxlength="40">
+                </label>
+            
+                <label class="dietRestrictions">
+                  Please list any allergies or dietary restrictions
+                  <input type="text" name="dietRestrictions" placeholder="eggs, soy, wheat, etc. (leave blank if n/a)">
+                </label>
+            
+                <label class="colorPalette">
+                  Color Palette
+                  <div class="color-palette"><input type="radio" id="Bright" name="colorPalette" value="Bright"><label for="Bright">Bright</label>
+                    <div class="color-choice"><img src="../../images/color_palettes/bright.png" alt="color choice" /></div>
+                  </div>
+                  <div class="color-palette"><input type="radio" id="Pastel" name="colorPalette" value="Pastel"><label for="Pastel">Pastel</label>
+                    <div class="color-choice"><img src="../../images/color_palettes/pastel.png" alt="color choice" /></div>
+                  </div>
+                  <div class="color-palette"><input type="radio" id="BlackWhiteGold" name="colorPalette" value="Black, White, Gold"><label
+                      for="BlackWhiteGold">Black, White, Gold</label>
+                    <div class="color-choice"><img src="../../images/color_palettes/black_white_gold.png" alt="color choice" /></div>
+                  </div>
+                  <div class="color-palette"><input type="radio" id="Retro" name="colorPalette" value="Retro"><label for="Retro">Retro</label>
+                    <div class="color-choice"><img src="../../images/color_palettes/retro.png" alt="color choice" /></div>
+                  </div>
+                </label>
+            
+              </div>
+            
+              <div>
+                <h3>Contact Info:</h3>
+            
+                <label>
+                  Your email:
+                  <input type="email" name="email" required>
+                </label>
+            
+                <label class="deliveryMethod">
+                  Delivery or Pickup? <h6>(additional cost for delivery)</h6>
+                  <select name="deliveryMethod" required>
+                    <option value="">- Choose one -</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="pickup">Pickup</option>
+                  </select>
+                </label>
+            
+                <label class="address" style="display: none;">
+                  Address for Delivery
+                  <input type="text" name="address" placeholder="1234 Somewhere Road #8254, Sacramento, CA 00000-0000">
+                </label>
+            
+                <label class="phone">
+                  Phone Number
+                  <input type="tel" name="phone" placeholder="123-456-7890" required>
+                </label>
+            
+            
+              </div>
+            
+              <label>
+                Additional Info:
+                <textarea name="additional info"></textarea>
+              </label>
+
+              <button type="submit" class="button big">Order Now</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- RELATED PRODUCTS -->
+        <!-- TODO - fix links to related products -->
+        <!-- Section -->
+        <section>
+          <header class="major">
+            <h2>Related Products</h2>
+          </header>
+          <div class="posts related-posts">
+            <article>
+              <a href="#" class="image"><img src="../../images/cakes/cake_pic08.jpg"
+                  alt="kid's rodeo themed birthday cake" /></a>
+              <h3>Cupcakes B</h3>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
+                interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              <ul class="actions">
+                <li><a href="../../orders.html" class="button prefill-button" data-order-type="birthday-kids">Order This</a>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="../../images/cakes/cake_pic01.jpg" alt="wedding cake" /></a>
+              <h3>Cake C</h3>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
+                interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              <ul class="actions">
+                <li><a href="../../orders.html" class="button prefill-button" data-order-type="wedding">Order This</a></li>
+              </ul>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="../../images/cakes/cake_pic07.jpg" alt="marble cake" /></a>
+              <h3>Cake D</h3>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
+                interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              <ul class="actions">
+                <li><a href="../../orders.html" class="button prefill-button" data-order-type="cupcakes">Order This</a></li>
+              </ul>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="../../images/cakes/cake_pic10.jpg" alt="soccer cake" /></a>
+              <h3>Cake E</h3>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
+                interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              <ul class="actions">
+                <li><a href="../../orders.html" class="button prefill-button" data-order-type="holiday">Order This</a></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="inner">
+
+        <!-- Menu -->
+        <nav id="menu">
+          <header class="major">
+            <h2>Menu</h2>
+          </header>
+          <ul>
+            <li><a href="../../index.html">Homepage</a></li>
+            <li><a href="../../about.html">About</a></li>
+            <li>
+              <span class="opener active">Menu</span>
+              <ul>
+                <li><a href="../../menu/cakemenu.html">Cake</a></li>
+                <li><a href="../../menu/cupcakemenu.html" id="navbar-selected">Cupcakes</a></li>
+                <li><a href="../../menu/piesmenu.html">Pies</a></li>
+                <li><a href="../../menu/cookiesmenu.html">Cookies</a></li>
+              </ul>
+            </li>
+            <li><a href="../../gallery.html">Gallery</a></li>
+            <li>
+              <span class="opener">Wedding Cakes</span>
+              <ul>
+                <li><a href="../../tasting.html">Tasting</a></li>
+                <li><a href="../../options.html">Cake Options</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Section -->
+        <section>
+          <header class="major">
+            <h2>Get in touch</h2>
+          </header>
+          <p>For questions regarding special events or orders, don't hesitate to contact us!</p>
+          <ul class="contact">
+            <li class="icon solid fa-envelope"><a href="mailto:amandabe723+personalsite@gmail.com">Email</a></li>
+            <li class="icon brands fa-instagram"><a href="https://instagram.com/mandyb.bakes"><span
+                  class="label">Instagram</span></a></li>
+          </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+          <p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        </footer>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="../../assets/js/browser.min.js"></script>
+  <script src="../../assets/js/breakpoints.min.js"></script>
+  <script src="../../assets/js/util.js"></script>
+  <script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>
