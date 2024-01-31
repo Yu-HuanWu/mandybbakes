@@ -2940,6 +2940,10 @@ button:disabled,
   padding-top: 0;
 }/*# sourceMappingURL=main.css.map */
 
+.item-name > h1 {
+  font-size: 3em;
+}
+
 .orderForm > div {
   background-color: #43574a1c;
   padding: 1em;
