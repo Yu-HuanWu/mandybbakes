@@ -2370,7 +2370,8 @@ button:disabled,
     display: none;
   }
   .posts article:nth-child(2n+1):after {
-    width: 100%;
+    width: 90vw;
+    left: 0; 
   }
   .posts article:nth-last-child(1), .posts article:nth-last-child(2) {
     margin-bottom: 0;
@@ -2380,6 +2381,12 @@ button:disabled,
   }
   .posts article:nth-last-child(1):after, .posts article:nth-last-child(2):after {
     display: none;
+  }
+  /* workaround to add vertical divider to article items where odd*/
+  .posts article:nth-child(odd):last-child:before {
+    display: flex;
+    height: 100%;
+    left: calc(100% + 3em);
   }
 }
 @media screen and (max-width: 736px) {
