@@ -2381,6 +2381,18 @@ button:disabled,
   .posts article:nth-last-child(1):after, .posts article:nth-last-child(2):after {
     display: none;
   }
+  /* workaround to add vertical divider to article items where odd*/
+  .posts article:nth-child(odd):last-child:before {
+    display: block;
+    height: 100%;
+    left: calc(100% + 3em);
+  }
+  /* workaround to add horizontal divider to article items*/
+  .posts article:nth-child(even):nth-last-child(2):after {
+    bottom: 3em;
+    display: block;
+    width: calc(100% + 6em);
+  }
 }
 @media screen and (max-width: 736px) {
   .posts {

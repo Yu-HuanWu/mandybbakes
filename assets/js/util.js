@@ -45,16 +45,29 @@
    *  source: https://answers.laserfiche.com/questions/165725/Only-allow-future-dates-in-date-field
    */
 	$(document).ready(function () {
-		const oneMonthFromToday = new Date();
-		oneMonthFromToday.setDate(oneMonthFromToday.getDate() + 30)
-		// get the earliest date for cake completion (1 month from today)
-		const year = oneMonthFromToday.getFullYear(); //yyyy
-		const month = ("0" + (oneMonthFromToday.getMonth() + 1)).slice(-2); //mm
-		const day = ("0" + oneMonthFromToday.getDate()).slice(-2); //dd
+    const oneMonthFromToday = new Date();
+    oneMonthFromToday.setDate(oneMonthFromToday.getDate() + 30);
+    // get the earliest date for cake completion (1 month from today)
+    const year = oneMonthFromToday.getFullYear(); //yyyy
+    const month = ("0" + (oneMonthFromToday.getMonth() + 1)).slice(-2); //mm
+    const day = ("0" + oneMonthFromToday.getDate()).slice(-2); //dd
 
 		const newDate = year + "-" + month + "-" + day;
 		$("#orderNeededDate").attr("min", newDate);
-	});
+  });
+
+	$(document).ready(function () {
+    const oneWeekFromToday = new Date();
+    oneWeekFromToday.setDate(oneWeekFromToday.getDate() + 7);
+
+    // get the earliest date for completion (1 week from today)
+    const year = oneWeekFromToday.getFullYear(); //yyyy
+    const month = ("0" + (oneWeekFromToday.getMonth() + 1)).slice(-2); //mm
+    const day = ("0" + oneWeekFromToday.getDate()).slice(-2); //dd
+
+		const newDate = year + "-" + month + "-" + day;
+		$("#orderNeededDate.shortLead").attr("min", newDate);
+  });
 
 	/**
 	 *  Pre-fill order form based on user selection from the homepage

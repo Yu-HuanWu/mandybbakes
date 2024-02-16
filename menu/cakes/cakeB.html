@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Cookie A — Mandy B. Bakes</title>
+  <title>Cake B — Mandy B. Bakes</title>
   <meta property="og:title" content="Mandy B Bakes" />
   <!-- <meta property="og:image" content="images/bg.jpg" /> -->
   <meta property="og:description" content="Amanda B's Online Bakery" />
@@ -26,7 +26,7 @@
         <header id="header">
           <a href="../../index.html" class="logo"><strong>Mandy B. Bakes</strong></a>
           <ul class="icons">
-            <li><a href="https://instagram.com/mandyb.bakes" class="icon brands fa-instagram"><span
+           <li><a href="https://instagram.com/mandyb.bakes" class="icon brands fa-instagram"><span
                   class="label">Instagram</span></a></li>
           </ul>
         </header>
@@ -34,11 +34,12 @@
         <!-- Banner -->
         <section id="banner">
           <span class="image image-left object">
-            <img src="../../images/pic01.jpg" alt="placeholder" />
+            <img src="../../images/cakes/cake_pic04.jpg"
+                  alt="kid's rodeo themed birthday cake" />
           </span>
           <div class="content content-right item-details">
             <header>
-              <h1>Cookie A</h1>
+              <h1>Cake B</h1>
             </header>
             <h2>Description:</h2>
             <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
@@ -50,46 +51,44 @@
               <div>
                 <h3>Select Your Options:</h3>
                 
-                <!-- Pass Cookie Name to Form -->
+                <!-- Pass Cake Name to Form -->
                 <label class="hidden">
-                  <input type="text" name="itemName" value="Cookie A" readonly>
+                  <input type="text" name="itemName" value="Cake A" readonly>
                 </label>
-                       
-                <label class="cookiesQuantity">
-                  Quantity of cookies
-                  <select class="cookiesQuantitySelect" name="cookies quantity">
+
+                <label class="hidden">
+                  What would you like?
+                  <select class="cakeOrCupcakes" name="cake or cupcakes">
                     <option value="">- Choose one -</option>
-                    <option value="6">6</option>
-                    <option value="12">12</option>
-                    <option value="24">24</option>
+                    <option value="cake" selected>Cake</option>
+                    <option value="cupcakes">Cupcakes</option>
+                  </select>
+                </label>
+            
+                <label class="cakeSize">
+                  Size of the cake
+                  <select class="cakeSizeSelect" name="cake size">
+                    <option value="">- Choose one -</option>
+                    <option value="4in">4-inch (8 servings)</option>
+                    <option value="6in">6-inch (12 servings)</option>
+                    <option value="8in">8-inch (24 servings)</option>
+                    <option value="10in">10-inch (34 servings)</option>
                   </select>
                 </label>
             
                 <label>
-                  When do you need the cookies by?
+                  When do you need the cake by?
                   <input type="date" name="date" id="orderNeededDate" class="shortLead" required>
                 </label>
             
+                <label>
+                  Add a Custom Inscription? <i>Limit 40 chars</i>
+                  <input type="text" name="event" id="event-type" placeholder="leave blank if N/A" maxlength="40">
+                </label>
+               
                 <label class="dietRestrictions">
                   Please list any allergies or dietary restrictions
                   <input type="text" name="dietRestrictions" placeholder="eggs, soy, wheat, etc. (leave blank if n/a)">
-                </label>
-            
-                <label class="colorPalette">
-                  Color Palette
-                  <div class="color-palette"><input type="radio" id="Bright" name="colorPalette" value="Bright"><label for="Bright">Bright</label>
-                    <div class="color-choice"><img src="../../images/color_palettes/bright.png" alt="color choice" /></div>
-                  </div>
-                  <div class="color-palette"><input type="radio" id="Pastel" name="colorPalette" value="Pastel"><label for="Pastel">Pastel</label>
-                    <div class="color-choice"><img src="../../images/color_palettes/pastel.png" alt="color choice" /></div>
-                  </div>
-                  <div class="color-palette"><input type="radio" id="BlackWhiteGold" name="colorPalette" value="Black, White, Gold"><label
-                      for="BlackWhiteGold">Black, White, Gold</label>
-                    <div class="color-choice"><img src="../../images/color_palettes/black_white_gold.png" alt="color choice" /></div>
-                  </div>
-                  <div class="color-palette"><input type="radio" id="Retro" name="colorPalette" value="Retro"><label for="Retro">Retro</label>
-                    <div class="color-choice"><img src="../../images/color_palettes/retro.png" alt="color choice" /></div>
-                  </div>
                 </label>
             
               </div>
@@ -120,7 +119,7 @@
                   Phone Number
                   <input type="tel" name="phone" placeholder="123-456-7890" required>
                 </label>
-            
+                
               </div>
             
               <label>
@@ -141,44 +140,44 @@
           </header>
           <div class="posts related-posts">
             <article>
-              <a href="cookieB.html" class="image"><img src="../../images/pic01.jpg" alt="placeholder" /></a>
-              <h3>Cookie B</h3>
+              <a href="cakeA.html" class="image"><img src="../../images/cakes/cake_pic03.jpg"
+                  alt="placeholder" /></a>
+              <h3>Cake A</h3>
               <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
                 interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                <ul class="actions">
-                  <li><a href="cookieB.html" class="button">Order This</a></li>
-                </ul>
-              </article>
-              <article>
-                <a href="cookieC.html" class="image"><img src="../../images/pic01.jpg" alt="placeholder" /></a>
-                <h3>Cookie C</h3>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-                  interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                  <ul class="actions">
-                    <li><a href="cookieC.html" class="button">Order This</a></li>
-                  </ul>
-                </article>
-                <article>
-                  <a href="../cupcakes/cupcakeA.html" class="image"><img src="../../images/cakes/cake_pic09.jpg" alt="multi-color floral cupcakes" /></a>
-                  <h3>Cupcake A</h3>
-                  <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-                    interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                    <ul class="actions">
-                      <li><a href="../cupcakes/cupcakeA.html" class="button">Order This</a></li>
-                    </ul>
-                  </article>
-                  <article>
-                    <a href="../cakes/cakeB.html" class="image"><img src="../../images/cakes/cake_pic04.jpg"
-                        alt="kid's rodeo themed birthday cake" /></a>
-                    <h3>Cake B</h3>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-                      interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                    <ul class="actions">
-                      <li><a href="../cakes/cakeB.html" class="button">Order This</a>
-                      </li>
-                    </ul>
-                  </article>
-                </div>
+              <ul class="actions">
+                <li><a href="cakeA.html" class="button">Order This</a>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <a href="cakeC.html" class="image"><img src="../../images/cakes/cake_pic05.jpg" alt="chocolate cake" /></a>
+              <h3>Cake C</h3>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
+                interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              <ul class="actions">
+                <li><a href="cakeC.html" class="button">Order This</a></li>
+              </ul>
+            </article>
+            <article>
+              <a href="cakeD.html" class="image"><img src="../../images/cakes/cake_pic07.jpg" alt="marble cake" /></a>
+              <h3>Cake D</h3>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
+                interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              <ul class="actions">
+                <li><a href="cakeD.html" class="button">Order This</a></li>
+              </ul>
+            </article>
+            <article>
+              <a href="cakeE.html" class="image"><img src="../../images/cakes/cake_pic10.jpg" alt="soccer cake" /></a>
+              <h3>Cake E</h3>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
+                interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+              <ul class="actions">
+                <li><a href="cakeE.html" class="button">Order This</a></li>
+              </ul>
+            </article>
+          </div>
         </section>
 
       </div>
@@ -199,10 +198,10 @@
             <li>
               <span class="opener active">Menu</span>
               <ul>
-                <li><a href="../../menu/cakemenu.html">Cake</a></li>
+                <li><a href="../../menu/cakemenu.html" id="navbar-selected">Cake</a></li>
                 <li><a href="../../menu/cupcakemenu.html">Cupcakes</a></li>
                 <li><a href="../../menu/piesmenu.html">Pies</a></li>
-                <li><a href="../../menu/cookiesmenu.html" id="navbar-selected">Cookies</a></li>
+                <li><a href="../../menu/cookiesmenu.html">Cookies</a></li>
               </ul>
             </li>
             <li><a href="../../gallery.html">Gallery</a></li>
